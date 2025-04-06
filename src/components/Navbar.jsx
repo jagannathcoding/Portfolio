@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <h1 className="logo">SWARUP</h1>
+        <h1 className="logo"></h1>
 
      
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
