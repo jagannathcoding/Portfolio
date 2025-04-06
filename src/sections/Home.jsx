@@ -4,7 +4,12 @@ const Home = () => {
         className="h-screen flex flex-col justify-center items-center text-white text-center bg-cover bg-center"
         style={{ backgroundImage: "url('/your-image.jpg')" }}
       >
+        <br/>
+
         <h1 className="text-5xl font-bold">
+          <br/>
+          <br/>
+          <br/>
           Hello, my name is <span className="text-teal-300">Jagannath Deb Gunin.</span>
         </h1>
         <h2 className="text-2xl mt-2">Web Development</h2>

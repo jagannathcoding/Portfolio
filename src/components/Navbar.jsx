@@ -1,41 +1,32 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-//import "./Navbar.css"; // Import the CSS file
+import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const handleLinkClick = (section) => {
+    scrollToSection(section);
+    setMenuOpen(false);
+  };
 
   return (
-    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+    <nav className="navbar">
       <div className="navbar-container">
-        <h1 className="logo"></h1>
+        <h1 className="logo">MyPortfolio</h1>
 
-     
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
 
-        
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          {["Home", "About", "Skills", "Services", "Work", "Contact"].map(
-            (item, index) => (
-              <li key={index}>
-                <a href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>
-                  {item}
-                </a>
-              </li>
-            )
-          )}
+          {["home", "about", "skills", "contact", "project"].map((section) => (
+            <li key={section}>
+              <a onClick={() => handleLinkClick(section)}>
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
