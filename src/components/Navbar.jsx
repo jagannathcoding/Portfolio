@@ -7,7 +7,7 @@ const Navbar = ({ scrollToSection }) => {
 
   const handleLinkClick = (section) => {
     scrollToSection(section);
-    setMenuOpen(false);
+    setMenuOpen(false); 
   };
 
   return (
