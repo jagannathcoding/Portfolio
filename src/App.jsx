@@ -42,6 +42,7 @@ const App = () => {
 export default App;
 */
 
+
 import { useRef, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './sections/Home';
@@ -49,6 +50,7 @@ import About from './sections/About';
 import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import Projects from './sections/Projects';
+
 
 const App = () => {
   const homeRef = useRef(null);
