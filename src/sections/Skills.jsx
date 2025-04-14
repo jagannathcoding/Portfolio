@@ -1,5 +1,5 @@
 const Skills=()=>(
-    <section className="section">
+    <section className="about-section">
         <h1>Skills</h1>
     <p>My Skills</p>
     </section>

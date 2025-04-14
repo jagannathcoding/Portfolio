@@ -1,5 +1,5 @@
 const Projects=()=>(
-    <section className="section">
+    <section className="about-section">
         <h2>My Project</h2>
         <div className="project">
             <h3>To do App</h3>
