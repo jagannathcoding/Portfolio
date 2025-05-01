@@ -54,6 +54,9 @@
 
 @media (max-width: 768px) {
   .menu-icon {
+    position: absolute;
+    top: 18px;
+    right: 40px; /* Adjust this value to move it left or right */
     display: block;
   }
 
