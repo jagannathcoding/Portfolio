@@ -25,13 +25,7 @@ const About = () => {
 
   return (
     <section className="about-section">
-      <video autoPlay muted loop playsInline className="background-video">
-        <source
-          src="https://media.istockphoto.com/id/1399019226/video/flying-through-emerging-wireframe-tunnel-loopable-multi-colored-version-technology-innovation.mp4?s=mp4-640x640-is&k=20&c=HlKBhXipu2qI8LsHEL-iVYCh1RkevvKHibe58YBX6QU="
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+      
 
       <h2 className="about-heading">About Me</h2>
       <p
