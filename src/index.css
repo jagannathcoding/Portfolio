@@ -34,7 +34,7 @@ body {
 /* About Section Styling */
 .about-section {
   position: relative;
-  padding: 80px 20px;  /* Increase padding for more spacious look */
+  padding: 10px 20px;  /* Increase padding for more spacious look */
   max-width: 700px;  /* Slightly wider for better content distribution */
   max-height:300px;
   margin: 80px auto;  /* Adjust margin to center */
@@ -129,12 +129,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height of the viewport */
+  height: 30vh; /* Full height of the viewport */
   /* Dark background for contrast */
   color: white;
   font-family: 'Arial', sans-serif;
   text-align: center;
   padding: 20px;
+  margin-top:50px;
 }
 
 /* Centered content */

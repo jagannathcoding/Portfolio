@@ -6,11 +6,7 @@ const Home = () => {
         <span className="highlighted-name">Jagannath Deb Gunin.</span>
         
         <h2 className="title">Web Development</h2>
-  
-        
-  
-        
-      </div>
+       </div>
     </section>
   );
 };
