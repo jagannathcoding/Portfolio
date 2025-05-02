@@ -7,9 +7,7 @@ const Home = () => {
         
         <h2 className="title">Web Development</h2>
   
-        <button className="contact-button">
-          Get In Touch
-        </button>
+        
   
         
       </div>
