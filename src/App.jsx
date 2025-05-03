@@ -45,7 +45,7 @@ const App = () => {
     <>
       <Navbar scrollToSection={scrollToSection} />
 
-      <div className="parallax-effect"></div>
+      
 
       <div className="content-wrapper">
         <div id="home" ref={homeRef} className="section" data-aos="fade-up">

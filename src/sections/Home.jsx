@@ -7,6 +7,9 @@ const Home = () => {
         
         <h2 className="title">Web Development</h2>
        </div>
+
+      
+
     </section>
   );
 };

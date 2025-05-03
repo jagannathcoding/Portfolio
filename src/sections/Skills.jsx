@@ -12,19 +12,19 @@ const Skills = () => (
         <FaJava className="skill-icon" />
         <p>Java</p>
       </div>
-      <div className="skill-card" data-aos="fade-up" data-aos-delay="300">
+      <div className="skill-card" data-aos="fade-up" data-aos-delay="280">
         <FaReact className="skill-icon" />
         <p>React</p>
       </div>
-      <div className="skill-card" data-aos="fade-up" data-aos-delay="400">
+      <div className="skill-card" data-aos="fade-up" data-aos-delay="340">
         <FaNodeJs className="skill-icon" />
         <p>Node.js</p>
       </div>
-      <div className="skill-card" data-aos="fade-up" data-aos-delay="500">
+      <div className="skill-card" data-aos="fade-up" data-aos-delay="380">
         <FaHtml5 className="skill-icon" />
         <p>HTML5</p>
       </div>
-      <div className="skill-card" data-aos="fade-up" data-aos-delay="600">
+      <div className="skill-card" data-aos="fade-up" data-aos-delay="380">
         <FaCss3Alt className="skill-icon" />
         <p>CSS3</p>
       </div>
