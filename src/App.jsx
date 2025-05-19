@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./App.css";
+import "./index.css";
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
@@ -8,6 +8,7 @@ import Contact from "./sections/Contact";
 import Projects from "./sections/Projects";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useThemeStore } from "./store/useThemeStore";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -15,6 +16,8 @@ const App = () => {
   const skillRef = useRef(null);
   const contactRef = useRef(null);
   const projectRef = useRef(null);
+
+   const { theme } = useThemeStore();
 
   const scrollToSection = (section) => {
     const refs = {
@@ -29,6 +32,17 @@ const App = () => {
       refs[section].current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+  if (theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+  }
+}, [theme]);
+
+
+
+
+
 
   useEffect(() => {
     AOS.init({
