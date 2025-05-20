@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeSelector from "./ThemeSelector";
@@ -9,7 +9,14 @@ const Navbar = () => {
 
   const navLinks = ["Home", "About", "Services", "Contact"];
   const toggleMenu = () => setMenuOpen(!menuOpen);
-  const getPath = (text) => (text.toLowerCase() === "home" ? "/" : `/${text.toLowerCase()}`);
+  const getPath = (text) =>
+    text.toLowerCase() === "home" ? "/" : `/${text.toLowerCase()}`;
+
+  // Prevent scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+    return () => (document.body.style.overflow = "auto");
+  }, [menuOpen]);
 
   return (
     <nav className="bg-base-100 text-base-content shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300">
@@ -57,34 +64,36 @@ const Navbar = () => {
         </div>
       </div>
 
-
-
-
-
+      {/* Backdrop Overlay */}
+      {menuOpen && (
+        <div
+          onClick={toggleMenu}
+          className="fixed inset-0 bg-black bg-opacity-40 z-40"
+        />
+      )}
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-  <ul
-    className="lg:hidden bg-base-200 text-base-content px-6 pb-4 space-y-3 transition-all duration-300"
-  >
-    {navLinks.map((text) => (
-      <li key={text}>
-        <Link
-          to={getPath(text)}
-          onClick={toggleMenu}
-          className={`btn btn-ghost btn-block rounded-full transition duration-300 ${
-            location.pathname === getPath(text)
-              ? "btn-primary font-semibold shadow-md scale-105"
-              : "hover:btn-secondary hover:shadow-md hover:scale-105"
-          }`}
+        <ul
+          className="absolute top-full left-0 right-0 z-50 bg-base-200 text-base-content px-6 pb-4 pt-4 space-y-3 shadow-md transition-transform duration-300"
         >
-          {text}
-        </Link>
-      </li>
-    ))}
-  </ul>
-)}
-
+          {navLinks.map((text) => (
+            <li key={text}>
+              <Link
+                to={getPath(text)}
+                onClick={toggleMenu}
+                className={`btn btn-ghost btn-block rounded-full transition duration-300 ${
+                  location.pathname === getPath(text)
+                    ? "btn-primary font-semibold shadow-md scale-105"
+                    : "hover:btn-secondary hover:shadow-md hover:scale-105"
+                }`}
+              >
+                {text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 };
