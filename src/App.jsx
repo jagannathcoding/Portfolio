@@ -1,31 +1,32 @@
 import React, { useEffect, useRef } from "react";
-import "./index.css";
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import Projects from "./sections/Projects";
+import { useThemeStore } from "./store/useThemeStore";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useThemeStore } from "./store/useThemeStore";
 
 const App = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const skillRef = useRef(null);
-  const contactRef = useRef(null);
   const projectRef = useRef(null);
+  const contactRef = useRef(null);
+  
 
-   const { theme } = useThemeStore();
+  const { theme } = useThemeStore();
 
   const scrollToSection = (section) => {
     const refs = {
       home: homeRef,
       about: aboutRef,
       skills: skillRef,
+      projects: projectRef,
       contact: contactRef,
-      project: projectRef,
+      
     };
 
     if (refs[section] && refs[section].current) {
@@ -34,47 +35,38 @@ const App = () => {
   };
 
   useEffect(() => {
-  if (theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-  }
-}, [theme]);
-
-
-
-
-
-
-  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: false,
-      mirror: true, // <-- important for scroll up
-      easing: 'ease-in-out', // optional for smooth effect
-      offset: 100, // start animation slightly before element hits center
+      mirror: true, 
+      easing: 'ease-in-out', 
+      offset: 100, 
     });
   }, []);
-  
+
+  useEffect(() => {
+    if (theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+    }
+  }, [theme]);
 
   return (
     <>
       <Navbar scrollToSection={scrollToSection} />
-
-      
-
       <div className="content-wrapper">
-        <div id="home" ref={homeRef} className="section" data-aos="fade-up">
+        <div id="home" ref={homeRef}>
           <Home />
         </div>
-        <div id="about" ref={aboutRef} className="section" data-aos="fade-right">
+        <div id="about" ref={aboutRef}>
           <About />
         </div>
-        <div id="skills" ref={skillRef} className="section" data-aos="zoom-in">
+        <div id="skills" ref={skillRef}>
           <Skills />
         </div>
-        <div id="project" ref={projectRef} className="section" data-aos="fade-left">
+        <div id="projects" ref={projectRef}>
           <Projects />
         </div>
-        <div id="contact" ref={contactRef} className="section" data-aos="fade-up">
+        <div id="contact" ref={contactRef}>
           <Contact />
         </div>
       </div>
