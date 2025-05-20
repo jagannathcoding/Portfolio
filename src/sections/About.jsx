@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Add social icons
 
 const About = () => {
   return (
@@ -10,32 +11,18 @@ const About = () => {
         </h2>
 
         <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed tracking-wide mb-12 font-medium break-words">
-          I am a passionate developer focused on building elegant and user-centric interfaces.
-          I’m a self-taught and constantly evolving front-end engineer/designer.
+          I’m a passionate developer with a focus on creating beautiful, functional web applications. I am constantly evolving as a front-end engineer and designer, driven by my desire to build elegant and user-friendly interfaces. 
           <br /><br />
-          I build software with HTML, CSS, and JavaScript — currently diving deep into React.js.
+          I specialize in <strong>HTML, CSS, JavaScript, and React.js</strong>, with a growing interest in <strong>Node.js</strong> and <strong>UX/UI design principles</strong>. I graduated in 2023 with a degree in Computer Science Engineering from Future Institute of Technology, West Bengal. 
           <br /><br />
-          I aim to make the web more open, accessible, and delightful.
-          <br /><br />
-          Graduated in 2023 with a degree in Computer Science Engineering from Future Institute of Technology, West Bengal.
-          <br /><br />
-          Open to exciting opportunities and ready to start immediately.
+          I am always eager to collaborate on exciting new projects and ready to dive into new challenges. Open to opportunities worldwide!
         </p>
 
-        <button
-          className="
-            btn btn-primary
-            inline-flex items-center justify-center
-            text-lg px-8 py-3
-            shadow-lg shadow-primary/50
-            hover:shadow-primary/70 hover:scale-105
-            transition-transform duration-300
-            mx-auto block max-w-max
-          "
-          aria-label="Get in Touch"
-        >
-          <FaPaperPlane className="text-white mr-2" size={18} /> Get in Touch
-        </button>
+        
+
+        
+
+       
       </div>
     </div>
   );

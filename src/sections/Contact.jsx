@@ -12,54 +12,36 @@ const Contact = () => (
       </p>
     </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="flex justify-center space-x-12 transition-all duration-300">
       {/* Contact Information 1: Email */}
-      <div
-        className="card bg-white shadow-xl rounded-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-        data-aos="fade-up"
-        data-aos-delay="300"
+      <a
+        href="mailto:jagannathdebgunin@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transform transition-all duration-300 hover:scale-125 hover:space-x-8"
       >
-        <div className="card-body text-center">
-          <FaEnvelope className="text-5xl text-primary mb-4" />
-          <h3 className="text-2xl font-semibold text-gray-800">Email</h3>
-          <p className="text-gray-600 mt-2">jagannathdebgunin@gmail.com</p>
-        </div>
-      </div>
+        <FaEnvelope className="text-5xl text-primary mb-4 hover:text-primary-focus transition duration-300" />
+      </a>
 
       {/* Contact Information 2: LinkedIn */}
-      <div
-        className="card bg-white shadow-xl rounded-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-        data-aos="fade-up"
-        data-aos-delay="500"
+      <a
+        href="https://www.linkedin.com/in/jagannathdebgunin"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transform transition-all duration-300 hover:scale-125 hover:space-x-8"
       >
-        <div className="card-body text-center">
-          <FaLinkedin className="text-5xl text-blue-600 mb-4" />
-          <h3 className="text-2xl font-semibold text-gray-800">LinkedIn</h3>
-          <p className="text-gray-600 mt-2">
-            <a href="https://www.linkedin.com/in/jagannathdebgunin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-              Visit my LinkedIn
-            </a>
-          </p>
-        </div>
-      </div>
+        <FaLinkedin className="text-5xl text-blue-600 mb-4 hover:text-blue-500 transition duration-300" />
+      </a>
 
       {/* Contact Information 3: GitHub */}
-      <div
-        className="card bg-white shadow-xl rounded-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-        data-aos="fade-up"
-        data-aos-delay="700"
+      <a
+        href="https://github.com/jagannathdebgunin"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transform transition-all duration-300 hover:scale-125 hover:space-x-8"
       >
-        <div className="card-body text-center">
-          <FaGithub className="text-5xl text-gray-800 mb-4" />
-          <h3 className="text-2xl font-semibold text-gray-800">GitHub</h3>
-          <p className="text-gray-600 mt-2">
-            <a href="https://github.com/jagannathdebgunin" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:underline">
-              Visit my GitHub
-            </a>
-          </p>
-        </div>
-      </div>
-
+        <FaGithub className="text-5xl text-gray-800 mb-4 hover:text-gray-700 transition duration-300" />
+      </a>
     </div>
 
     {/* Say Hello Button */}
