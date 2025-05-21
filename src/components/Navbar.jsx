@@ -28,7 +28,7 @@ const Navbar = ({ scrollToSection }) => {
           className="text-2xl font-bold font-mono tracking-widest 
                      bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
         >
-          MySite
+          My Site
         </button>
 
         {/* Desktop Navigation */}

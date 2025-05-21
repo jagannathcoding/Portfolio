@@ -21,7 +21,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Product App */}
         <div
-          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
+          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="300"
           style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
@@ -33,12 +33,12 @@ const Projects = () => {
             <p className="text-lg mb-4" style={{ color: "white" }}>
               A dynamic Product app built with the PERN stack for efficient adding products.
             </p>
-            <div className="flex justify-center gap-4 mt-4 overflow-x-auto">
+            <div className="flex flex-wrap justify-center gap-4 mt-4">
               <a
                 href="https://store-project-1.onrender.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 px-6 rounded-full transition-all duration-300 ease-in-out shadow-lg"
+                className="py-2 px-4 sm:px-6 rounded-full transition-transform duration-300 ease-in-out shadow-lg hover:scale-110"
                 style={{
                   backgroundColor: primaryColor,
                   color: accentColor,
@@ -50,7 +50,7 @@ const Projects = () => {
                 href="https://github.com/jagannathcoding/STORE-PROJECT"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
+                className="py-2 px-4 rounded-full transition-transform duration-300 ease-in-out shadow-md hover:scale-110"
                 style={{
                   backgroundColor: primaryColor,
                   color: accentColor,
@@ -64,7 +64,7 @@ const Projects = () => {
 
         {/* CV Generator */}
         <div
-          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
+          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="700"
           style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
@@ -76,12 +76,12 @@ const Projects = () => {
             <p className="text-lg mb-4" style={{ color: "white" }}>
               A resume generator built using HTML, CSS, JavaScript, and React that lets users create and download custom CVs.
             </p>
-            <div className="flex justify-center gap-4 mt-4 flex-wrap">
+            <div className="flex flex-wrap justify-center gap-4 mt-4">
               <a
                 href="https://jagannathcoding.github.io/Resume/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
+                className="py-2 px-4 rounded-full transition-transform duration-300 ease-in-out shadow-md hover:scale-110"
                 style={{
                   backgroundColor: primaryColor,
                   color: accentColor,
@@ -93,7 +93,7 @@ const Projects = () => {
                 href="https://github.com/jagannathcoding/Resume"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
+                className="py-2 px-4 rounded-full transition-transform duration-300 ease-in-out shadow-md hover:scale-110"
                 style={{
                   backgroundColor: primaryColor,
                   color: accentColor,
@@ -107,7 +107,7 @@ const Projects = () => {
 
         {/* Simon Game */}
         <div
-          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
+          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="900"
           style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
@@ -119,12 +119,12 @@ const Projects = () => {
             <p className="text-lg mb-4" style={{ color: "white" }}>
               A fun and interactive memory game made with pure HTML, CSS, and JavaScript. Test your memory and speed!
             </p>
-            <div className="flex justify-center gap-4 mt-4 flex-wrap">
+            <div className="flex flex-wrap justify-center gap-4 mt-4">
               <a
                 href="https://jagannathcoding.github.io/SimonGame/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
+                className="py-2 px-4 rounded-full transition-transform duration-300 ease-in-out shadow-md hover:scale-110"
                 style={{
                   backgroundColor: primaryColor,
                   color: accentColor,
@@ -136,7 +136,7 @@ const Projects = () => {
                 href="https://github.com/jagannathcoding/SimonGame"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
+                className="py-2 px-4 rounded-full transition-transform duration-300 ease-in-out shadow-md hover:scale-110"
                 style={{
                   backgroundColor: primaryColor,
                   color: accentColor,
@@ -148,34 +148,37 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Shopping Website */}
-        <div
-          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
-          data-aos="fade-up"
-          data-aos-delay="1100"
-          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
-        >
-          <div className="card-body text-center p-6">
-            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}>
-              Shopping Website
-            </h3>
-            <p className="text-lg mb-4" style={{ color: "white" }}>
-              A complete e-commerce platform built with MERN, featuring user authentication and shopping cart functionality.
-            </p>
-            <a
-              href="https://drive.google.com/drive/folders/1-1fcdMuYpRQO7SfYxb7-JDs1OqwomYf8?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-3 px-6 rounded-full transition-all duration-300 ease-in-out shadow-lg"
-              style={{
-                backgroundColor: primaryColor,
-                color: accentColor,
-              }}
-            >
-              Source Code
-            </a>
-          </div>
-        </div>
+      {/* Shopping Website */}
+<div
+  className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-xl"
+  data-aos="fade-up"
+  data-aos-delay="950"
+  style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
+>
+  <div className="card-body text-center p-6">
+    <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}>
+      Shopping Website
+    </h3>
+    <p className="text-lg mb-4" style={{ color: "white" }}>
+      A complete e-commerce platform built with MERN, featuring user authentication and shopping cart functionality.
+    </p>
+    <div className="flex justify-center gap-4 mt-4">
+      <a
+        href="https://drive.google.com/drive/folders/1-1fcdMuYpRQO7SfYxb7-JDs1OqwomYf8?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="py-2 px-4 rounded-full transition-transform duration-300 ease-in-out shadow-md hover:scale-110"
+        style={{
+          backgroundColor: primaryColor,
+          color: accentColor,
+        }}
+      >
+        Source Code
+      </a>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );
