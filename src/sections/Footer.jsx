@@ -7,7 +7,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Jagannathcoding. All rights reserved.
       </p>
       <p>
-        Designed & built with ❤️ by Jagannathcoding.
+        Designed & built with ❤️ by Jagannath Coding.
       </p>
     </footer>
   );
