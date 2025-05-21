@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa"; // Importing icons from react-icons
+import { FaLinkedin, FaEnvelope, FaGithub,FaTwitter } from "react-icons/fa"; // Importing icons from react-icons
 
 const Contact = () => (
   <section className="py-16 px-8 bg-base-200">
@@ -25,7 +25,7 @@ const Contact = () => (
 
       {/* Contact Information 2: LinkedIn */}
       <a
-        href="https://www.linkedin.com/in/jagannathdebgunin"
+        href="https://www.linkedin.com/in/jagannath-deb-gunin-598326287/"
         target="_blank"
         rel="noopener noreferrer"
         className="transform transition-all duration-300 hover:scale-125 hover:space-x-8"
@@ -35,25 +35,33 @@ const Contact = () => (
 
       {/* Contact Information 3: GitHub */}
       <a
-        href="https://github.com/jagannathdebgunin"
+        href="https://github.com/jagannathcoding?tab=repositories"
         target="_blank"
         rel="noopener noreferrer"
         className="transform transition-all duration-300 hover:scale-125 hover:space-x-8"
       >
         <FaGithub className="text-5xl text-gray-800 mb-4 hover:text-gray-700 transition duration-300" />
       </a>
+
+
+      <a
+        href="https://x.com/itsmejagannath"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transform transition-all duration-300 hover:scale-125 hover:space-x-8"
+        >
+          <FaTwitter className="text-5xl text-blue-400 mb-4 hover:text-blue-300 transition duration-300" />
+      </a>
+
+
+
+
+
+
     </div>
 
     {/* Say Hello Button */}
-    <div className="text-center mt-8">
-      <button
-        className="btn btn-primary text-white py-2 px-6 rounded-full shadow-md hover:scale-105 transition-transform duration-300"
-        data-aos="fade-up"
-        data-aos-delay="900"
-      >
-        Say Hello
-      </button>
-    </div>
+    
   </section>
 );
 

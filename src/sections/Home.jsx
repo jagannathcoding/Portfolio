@@ -38,7 +38,7 @@ const Home = () => {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          Front-End Developer | JavaScript Enthusiast
+          Web Developer | JavaScript Enthusiast
         </h2>
 
         {/* Bio */}
@@ -61,35 +61,8 @@ const Home = () => {
           </a>
         </div>
 
-        {/* Social Icons */}
-        <div
-          className="flex justify-center gap-6 mt-6"
-          data-aos="fade-up"
-          data-aos-delay="600"
-        >
-          <a
-            href="https://github.com/jagannathdebgunin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
-          >
-            <FaGithub size={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jagannathdebgunin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
-          >
-            <FaLinkedin size={24} />
-          </a>
-          <a
-            href="mailto:jagannathdebgunin@gmail.com"
-            className="hover:text-primary transition-colors"
-          >
-            <FaEnvelope size={24} />
-          </a>
-        </div>
+        
+        
       </div>
     </section>
   );

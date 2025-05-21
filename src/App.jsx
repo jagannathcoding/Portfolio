@@ -6,6 +6,7 @@ import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import Projects from "./sections/Projects";
 import { useThemeStore } from "./store/useThemeStore";
+import Footer from "./sections/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -68,6 +69,9 @@ const App = () => {
         </div>
         <div id="contact" ref={contactRef}>
           <Contact />
+        </div>
+        <div id="footer">
+          <Footer />
         </div>
       </div>
     </>
