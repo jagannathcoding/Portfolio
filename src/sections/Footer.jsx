@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6 text-center">
-      <p>
-        &copy; {new Date().getFullYear()} Jagannathcoding. All rights reserved.
-      </p>
-      <p>
-        Designed & built with ❤️ by Jagannath Coding.
-      </p>
+    <footer className="footer footer-center p-6 bg-base-200 text-base-content">
+      <aside>
+        <p className="font-semibold">
+          &copy; {new Date().getFullYear()} Jagannathcoding. All rights reserved.
+        </p>
+        <p>Designed & built with ❤️ by Jagannath Coding.</p>
+      </aside>
     </footer>
   );
 };

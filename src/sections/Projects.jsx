@@ -21,13 +21,13 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Product App */}
         <div
-          className={`card shadow-xl rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:rotate-2`}
+          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="300"
-          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }} // ✅ changed
+          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
         >
           <div className="card-body text-center p-6">
-            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}> {/* ✅ changed */}
+            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}>
               Product Store
             </h3>
             <p className="text-lg mb-4" style={{ color: "white" }}>
@@ -40,7 +40,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="py-2 px-6 rounded-full transition-all duration-300 ease-in-out shadow-lg"
                 style={{
-                  backgroundColor: primaryColor, // ✅ changed
+                  backgroundColor: primaryColor,
                   color: accentColor,
                 }}
               >
@@ -52,7 +52,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
                 style={{
-                  backgroundColor: primaryColor, // ✅ changed
+                  backgroundColor: primaryColor,
                   color: accentColor,
                 }}
               >
@@ -64,13 +64,13 @@ const Projects = () => {
 
         {/* CV Generator */}
         <div
-          className="card shadow-xl rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:rotate-2"
+          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="700"
-          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }} // ✅ changed
+          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
         >
           <div className="card-body text-center p-6">
-            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}> {/* ✅ changed */}
+            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}>
               CV Generator
             </h3>
             <p className="text-lg mb-4" style={{ color: "white" }}>
@@ -83,7 +83,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
                 style={{
-                  backgroundColor: primaryColor, // ✅ changed
+                  backgroundColor: primaryColor,
                   color: accentColor,
                 }}
               >
@@ -95,7 +95,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
                 style={{
-                  backgroundColor: primaryColor, // ✅ changed
+                  backgroundColor: primaryColor,
                   color: accentColor,
                 }}
               >
@@ -107,13 +107,13 @@ const Projects = () => {
 
         {/* Simon Game */}
         <div
-          className="card shadow-xl rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:rotate-2"
+          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
           data-aos="fade-up"
           data-aos-delay="900"
-          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }} // 
+          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
         >
           <div className="card-body text-center p-6">
-            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}> 
+            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}>
               Simon Game
             </h3>
             <p className="text-lg mb-4" style={{ color: "white" }}>
@@ -126,7 +126,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
                 style={{
-                  backgroundColor: primaryColor, // 
+                  backgroundColor: primaryColor,
                   color: accentColor,
                 }}
               >
@@ -138,7 +138,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="py-2 px-4 rounded-full transition-all duration-300 shadow-md"
                 style={{
-                  backgroundColor: primaryColor, // 
+                  backgroundColor: primaryColor,
                   color: accentColor,
                 }}
               >
@@ -150,13 +150,13 @@ const Projects = () => {
 
         {/* Shopping Website */}
         <div
-          className="card shadow-xl rounded-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:rotate-2"
+          className="card shadow-xl rounded-xl transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl"
           data-aos="fade-up"
-          data-aos-delay="500"
-          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }} // ✅ changed
+          data-aos-delay="1100"
+          style={{ background: `linear-gradient(to right, ${primaryColor}, ${secondaryColor}, ${accentColor})` }}
         >
           <div className="card-body text-center p-6">
-            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}> {/* ✅ changed */}
+            <h3 className="text-3xl font-semibold mb-4" style={{ color: accentColor }}>
               Shopping Website
             </h3>
             <p className="text-lg mb-4" style={{ color: "white" }}>
@@ -164,9 +164,11 @@ const Projects = () => {
             </p>
             <a
               href="https://drive.google.com/drive/folders/1-1fcdMuYpRQO7SfYxb7-JDs1OqwomYf8?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="py-3 px-6 rounded-full transition-all duration-300 ease-in-out shadow-lg"
               style={{
-                backgroundColor: primaryColor, // ✅ changed
+                backgroundColor: primaryColor,
                 color: accentColor,
               }}
             >
