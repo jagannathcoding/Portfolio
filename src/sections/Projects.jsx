@@ -4,7 +4,7 @@ import { THEMES } from "../constants";
 import projectImage from "../assets/store.png";
 import resumeImage from "../assets/Resume.png";
 import chatvidImage from "../assets/chatvid.png";
- import simonImage from "../assets/simon.png";
+import simonImage from "../assets/Simon.png";
 
 
 
