@@ -1,68 +1,106 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Home = () => {
+  // Variants for character animation (right-to-left)
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.03,
+      },
+    },
+  };
+
+  const letterVariants = {
+    hidden: { opacity: 0, x: 20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.25, 0.1, 0.25, 1], // ease-in-out
+      },
+    },
+  };
+
   return (
     <section
       className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1510674485131-dc88d96369b4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D')",
+          "url('https://t4.ftcdn.net/jpg/06/55/22/27/240_F_655222742_TdJsC5H6jSFGM55tUWjpkjd8sko18Yh9.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Dark Overlay for readability */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-      {/* Main content */}
+      {/* Main Content */}
       <div className="relative z-10 text-center max-w-2xl mx-auto py-24 sm:py-32 space-y-5 text-white">
         {/* Intro */}
-        <p className="text-base sm:text-lg" data-aos="fade-up" data-aos-delay="100">
+        <motion.p
+          className="text-base sm:text-lg"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           Hi there, I'm
-        </p>
+        </motion.p>
 
         {/* Name */}
-        <h1
-          className="text-4xl sm:text-5xl font-extrabold leading-tight text-primary-content"
-          data-aos="fade-up"
-          data-aos-delay="200"
+        <motion.h1
+          className="text-4xl sm:text-5xl font-extrabold leading-tight text-white"
+          style={{ textShadow: "0 1px 6px rgba(0, 0, 0, 0.8)" }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
         >
           Jagannath Deb Gunin
-        </h1>
+        </motion.h1>
 
-        {/* Title */}
-        <h2
-          className="text-xl sm:text-2xl font-semibold"
-          data-aos="fade-up"
-          data-aos-delay="300"
+        {/* Animated Title */}
+        <motion.h2
+          className="text-xl sm:text-2xl font-semibold flex justify-center flex-wrap"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
         >
-          Web Developer | JavaScript Enthusiast
-        </h2>
+          {"Web Developer | JavaScript Enthusiast".split("").map((char, index) => (
+            <motion.span key={index} variants={letterVariants}>
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
+        </motion.h2>
 
         {/* Bio */}
-        <p
+        <motion.p
           className="text-sm sm:text-base text-gray-200 max-w-lg mx-auto mt-2 px-2"
-          data-aos="fade-up"
-          data-aos-delay="400"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1 }}
         >
           I specialize in building responsive, user-friendly web applications using modern
           technologies like React.js, Tailwind CSS, and the MERN stack. Let’s build something great
           together.
-        </p>
+        </motion.p>
 
         {/* Call to Action */}
-        <div data-aos="fade-up" data-aos-delay="500">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 1.4 }}
+        >
           <a href="#contact">
             <button className="btn btn-primary mt-4 px-6 py-3 text-base sm:text-lg rounded-full shadow-md hover:scale-105 transition-transform duration-300">
               Get in Touch
             </button>
           </a>
-        </div>
-
-        
-        
+        </motion.div>
       </div>
     </section>
   );

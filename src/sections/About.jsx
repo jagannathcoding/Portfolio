@@ -6,7 +6,7 @@ const About = () => {
       className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 text-center overflow-x-hidden"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1583144568008-76743354fa5a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwYWVzdGhldGljfGVufDB8fDB8fHww')",
+          "url('https://t4.ftcdn.net/jpg/09/38/72/75/240_F_938727569_EUFoBmOJo9tQv9WFxZkOOA62XzA0KRpr.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

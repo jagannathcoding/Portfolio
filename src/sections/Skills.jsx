@@ -1,5 +1,13 @@
 import React, { useEffect } from "react";
-import { FaJava, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaCode, FaGitAlt } from "react-icons/fa";
+import {
+  FaJava,
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaCode,
+  FaGitAlt,
+} from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,38 +30,24 @@ const Skills = () => {
     <section
       className="py-10 bg-base-100 min-h-screen mt-24 mb-10 pt-24"
       id="skills"
-      style={{ scrollMarginTop: "80px" }} // Add scrollMarginTop to prevent overlap with navbar
+      style={{ scrollMarginTop: "80px" }}
     >
-      <div className="text-center mb-10" data-aos="fade-up" data-aos-delay="100">
+      <div
+        className="text-center mb-10"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <h1 className="text-4xl font-bold text-primary">Skills</h1>
       </div>
 
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl px-4">
-          {skills.slice(0, 4).map((skill, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl px-4">
+          {skills.map((skill, index) => (
             <div
               key={index}
               className="flex flex-col justify-center items-center p-6"
               data-aos="fade-up"
-              data-aos-delay={200 + index * 80}
-            >
-              <div className="relative flex justify-center items-center p-6 rounded-full bg-base-200 shadow-lg transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl">
-                {skill.icon}
-              </div>
-              <p className="mt-2 font-semibold text-center">{skill.name}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="flex justify-center mt-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl px-4">
-          {skills.slice(4).map((skill, index) => (
-            <div
-              key={index + 100}
-              className="flex flex-col justify-center items-center p-6"
-              data-aos="fade-up"
-              data-aos-delay={200 + (index + 4) * 80}
+              data-aos-delay={200 + index * 100}
             >
               <div className="relative flex justify-center items-center p-6 rounded-full bg-base-200 shadow-lg transition-all duration-500 ease-in-out hover:scale-150 hover:shadow-xl">
                 {skill.icon}
